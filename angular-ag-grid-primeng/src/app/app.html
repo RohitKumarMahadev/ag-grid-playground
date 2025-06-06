@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<div style="padding: 20px;">
+  <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
+    <p-toggleButton [(ngModel)]="toggleActive" onLabel="Active" offLabel="Inactive"></p-toggleButton>
+    <p-calendar [(ngModel)]="selectedDateRange" selectionMode="range" [readonlyInput]="true" placeholder="Select Date Range"></p-calendar>
+  </div>
+
+  <ag-grid-angular
+    style="width: 100%; height: 300px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs">
+  </ag-grid-angular>
+
+  <div style="margin-top: 20px; display: flex; gap: 10px;">
+    <p-button label="Export"></p-button>
+    <p-button label="Refresh" styleClass="p-button-secondary"></p-button>
+  </div>
+</div>

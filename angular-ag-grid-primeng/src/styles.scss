@@ -1,0 +1,18 @@
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: var(--font-family); /* Using PrimeNG's font variable, if available from theme */
+}
+
+body {
+  padding: 20px; /* Add some padding around the whole application */
+  box-sizing: border-box;
+}
+
+/* Optional: Style the main app container if needed, though AppComponent might handle its own layout */
+/* app-root {
+  display: block; // Or flex, grid depending on desired layout
+} */
+
+/* You can add global styles to this file, and also import other style files */
